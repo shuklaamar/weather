@@ -17,7 +17,7 @@ hbs.registerPartials(path.join(__dirname,'../template/partials'))
 app.get('',(req,res)=>{
     res.render('index',{
         title:"wather",
-        name:"andrew"
+        name:"amar"
     })
 })
 app.get('/about',(req,res)=>{
