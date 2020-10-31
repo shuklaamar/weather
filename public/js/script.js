@@ -6,7 +6,7 @@ weather.addEventListener('submit',(e)=>{
     e.preventDefault()
     document.getElementById('message1').textContent="loading"
     document.getElementById('message2').textContent="..."
-    fetch('http://localhost:3000/weather?address='+search.value).then((response) => {
+    fetch('/weather?address='+search.value).then((response) => {
     response.json().then((data) => {
         if(data.error){
             document.getElementById('message1').textContent="please provide a correct location"
